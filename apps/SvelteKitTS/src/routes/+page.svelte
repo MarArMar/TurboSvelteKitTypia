@@ -8,7 +8,11 @@
     exampleNotMember,
     validateMember,
   } from "./local-typia";
-  import { log, messageLoaded } from "common/log";
+  // None of these are working
+  // import { log, messageLoaded } from "../../../../packages/common/log";
+  // import { log, messageLoaded } from "../../../../packages/common/log.ts";
+  // import { log, messageLoaded } from "common/log.ts";
+  import { log, messageLoaded } from "common/log.ts";
   import { messageLoadedLocal } from "./local-ts";
 
   onMount(() => {

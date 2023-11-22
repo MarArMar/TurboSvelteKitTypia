@@ -1,3 +1,24 @@
+## Description of the problem 
+
+In this monorepo, within Sveltekit projects : 
+✅ TS files from the same project work
+✅ JS file from the PNPM workspace work
+✅ On a regular Sveltekit install, TS files on the PNPM workspace work
+BUT When I import a TS file on the PNPM workspace work I get this :
+
+```
+Parse failure: Unexpected token (3:26)
+At file: /@fs/TurboSvelteKitTypia/packages/common/log.ts
+Contents of line 3: export const messageLoaded: string =
+```
+
+Tried : 
+- putting the rollup-plugin-typescript2 plugin before the sveltekit plugin in the vite config, it didn't work
+- importing the file with ".ts" at the end of the import, no effect
+- importing the file from a relative path ".ts" at the end of the import, no effect (https://github.com/vitejs/vite/issues/5370#issuecomment-1339022262)
+- setting "sourceMap: false," in the vite config, no effect
+
+
 ### Setup
 ```sh
 pnpm add turbo --global
