@@ -1,6 +1,6 @@
 ### Description of the problem 
 
-In this monorepo (turborepo), within Vite-Sveltekit projects that do not use EsBuild in the vite config :
+In this monorepo (Turborepo), within Vite-Sveltekit projects that do not use EsBuild in the vite config :
 - ✅ TS files from the same project work
 - ✅ JS file from the PNPM workspace work
 - ✅ On a regular Sveltekit install, TS files on the PNPM workspace work
