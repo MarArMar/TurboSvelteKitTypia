@@ -9,11 +9,12 @@
     "strict": true,
 
     "sourceMap": false,
-    "checkJs": false,
+    // No effect
+    // "checkJs": false,
 
     // No effect
-    "noEmit": true, // Apparently needed for allowImportingTsExtensions
-    "allowImportingTsExtensions": true,
+    // "noEmit": true, // Apparently needed for allowImportingTsExtensions
+    // "allowImportingTsExtensions": true,
 
     "noEmitOnError": false,
     "plugins": [
