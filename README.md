@@ -17,7 +17,12 @@ Tried :
 - importing the file with ".ts" at the end of the import, no effect
 - importing the file from a relative path ".ts" at the end of the import, no effect (https://github.com/vitejs/vite/issues/5370#issuecomment-1339022262)
 - setting "sourceMap: false," in the vite config, no effect
+- setting ""allowImportingTsExtensions": true" in the rollup-plugin-typescript2 plugin config & tsconfig, no effect (https://github.com/samchon/typia/issues/812#issuecomment-1738303267)
 
+Tried solutions proposed in :
+- https://github.com/ezolenko/rollup-plugin-typescript2/issues/465
+- https://github.com/vitejs/vite/issues/5370#issuecomment-1063613175
+- https://github.com/samchon/typia/issues/812
 
 ### Setup
 ```sh
