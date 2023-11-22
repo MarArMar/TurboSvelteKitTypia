@@ -8,6 +8,7 @@ export default defineConfig({
     sveltekit(),
     typescript({
       check: false,
+      // sourceMap: false,
     }),
   ],
 });
