@@ -1,12 +1,14 @@
 <script lang="ts">
+  // http://127.0.0.1:5173/imported
+
   import { onMount } from "svelte";
   import {
     loadedTypia,
     exampleMember,
     exampleNotMember,
     validateMember,
-  } from "./typia";
-  import { log, messageLoaded } from "common/lib/log-ts";
+  } from "./local-typia";
+  import { log, messageLoaded } from "common/log";
   import { messageLoadedLocal } from "./local-ts";
 
   onMount(() => {

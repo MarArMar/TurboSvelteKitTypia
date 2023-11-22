@@ -1,35 +1,3 @@
-### Setup
-```sh
-pnpm add turbo --global
-pnpm install
-```
-
-### Working 
-
-pnpm workspace with typia & TS imports : 
-```sh
-npx ts-node packages/typiaLib/run.ts
-```
-
-pnpm workspace lib that imports typia : 
-```sh
-npx ts-node packages/typia-imported/run-import
-```
-
-### Sveltekit test
-Dev
-```sh
-npx turbo run dev --filter=SvelteKitTypia
-```
-Build
-```sh
-npx turbo run build --filter=SvelteKitTypia
-```
-
-
-Note : Basic example all give wrong results : 
-
-```ts
 import typia, { tags } from 'typia'
 
 interface IMember {
@@ -65,9 +33,3 @@ export function validateMember(member: IMember) {
   }
 }
 export const loadedTypia = `typia.ts loaded and matched is ${matched} (expected: true) & notMatched is ${notMatched} (expected: false)`
-```
-
-Gives : 
-```text
-typia.ts loaded and matched is true (expected: true) & notMatched is true (expected: false)
-```

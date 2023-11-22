@@ -26,7 +26,8 @@
     "vite": "^4.4.2"
   },
   "dependencies": {
-    "common": "workspace:*"
+    "common": "workspace:*",
+    "typiaLib": "workspace:*"
   },
   "type": "module"
 }
