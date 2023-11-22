@@ -22,6 +22,7 @@ Tried :
 - importing the file from a relative path `.ts` at the end of the import, no effect (https://github.com/vitejs/vite/issues/5370#issuecomment-1339022262)
 - setting `sourceMap: false,` in the `rollup-plugin-typescript2` plugin config, no effect (in `tsconfig.json` it does suppress a warning)
 - setting `allowImportingTsExtensions: true` in the `rollup-plugin-typescript2` plugin config & tsconfig, no effect (https://github.com/samchon/typia/issues/812#issuecomment-1738303267)
+- using `tspCompiler` in the `rollup-plugin-typescript2` plugin config, no effect (https://github.com/samchon/typia/issues/812#issuecomment-1738348716)
 
 
 Tried solutions proposed in :
