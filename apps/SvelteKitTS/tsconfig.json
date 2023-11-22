@@ -12,8 +12,8 @@
     "checkJs": false,
 
     // No effect
-    // "noEmit": true, // Apparently needed for allowImportingTsExtensions
-    // "allowImportingTsExtensions": true,
+    "noEmit": true, // Apparently needed for allowImportingTsExtensions
+    "allowImportingTsExtensions": true,
 
     "noEmitOnError": false,
     "plugins": [

@@ -9,10 +9,16 @@
     validateMember,
   } from "./local-typia";
   // None of these are working
+
+  // let messageLoaded = "Not loaded";
+  
   // import { log, messageLoaded } from "../../../../packages/common/log";
   // import { log, messageLoaded } from "../../../../packages/common/log.ts";
   // import { log, messageLoaded } from "common/log.ts";
-  import { log, messageLoaded } from "common/log.ts";
+  import { log, messageLoaded } from "common/log";
+
+  // Same error
+  // import { messageLoadedLocalWithImport } from "./local-ts-with-ts-import";
   import { messageLoadedLocal } from "./local-ts";
 
   onMount(() => {
@@ -27,6 +33,8 @@
 <p>Check console for typia validations</p>
 <br />
 {messageLoadedLocal}
+<!-- <br />
+{messageLoadedLocalWithImport} -->
 <br />
 {messageLoaded}
 <br />
