@@ -1,5 +1,7 @@
 ### Description of the problem 
 
+Updates : now works, see config, had to add  " include: ["../../**/*.ts+(|x)"],"
+
 In this monorepo (Turborepo), within Vite-Sveltekit projects that do not use EsBuild in the vite config :
 - ✅ TS files from the same project work
 - ✅ JS file from the PNPM workspace work

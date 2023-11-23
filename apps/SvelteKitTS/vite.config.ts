@@ -15,8 +15,9 @@ export default defineConfig({
       // check: false,
 
       // No effect
+      include: ["../../**/*.ts+(|x)"],
       // include: ["*.ts+(|x)", "**/*.ts+(|x)", "**/*.cts", "**/*.mts"],
-      // exclude: ["**/node_modules/**/*"],
+      exclude: ["../../**/node_modules/**/*"],
 
       // No effect
       // noEmit: true,
